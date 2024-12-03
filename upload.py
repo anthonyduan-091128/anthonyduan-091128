@@ -20,7 +20,7 @@ elif choise == "提取":
     if password == '1128':
         zip_filename = "上传的文件.zip"
 
-        with ZipFile(zip_filename, 'w')d as zip_file:
+        with ZipFile(zip_filename, 'w') as zip_file:
             for folder, subfolders, filenames in os.walk(upload_dir):
                 for filename in filenames:
                     file_path = os.path.join(folder, filename)
